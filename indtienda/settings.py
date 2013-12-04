@@ -210,3 +210,9 @@ EMAIL_HOST_USER = 'andycsoto'
 EMAIL_HOST_PASSWORD = 'aacs1988'
 
 DEFAULT_FROM_EMAIL = 'andycsoto@webmaster.cl'
+
+SERVER_EMAIL = 'andycsoto@webmaster.cl'
+try:
+    from local_settings import *
+except ImportError:
+    pass
