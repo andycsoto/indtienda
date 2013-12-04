@@ -40,7 +40,7 @@ TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 SITE_ID = 1
 
@@ -197,6 +197,12 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
+OSCAR_SHOP_NAME ='ind tienda'
+
+OSCAR_SHOP_TAGLINE ='In Nomine Draconis'
+
+OSCAR_DEFAULT_CURRENCY = 'CLP'
+
 EMAIL_HOST = 'smtp.webfaction.com'
 
 EMAIL_HOST_USER = 'andycsoto'
@@ -204,10 +210,3 @@ EMAIL_HOST_USER = 'andycsoto'
 EMAIL_HOST_PASSWORD = 'aacs1988'
 
 DEFAULT_FROM_EMAIL = 'andycsoto@webmaster.cl'
-
-SERVER_EMAIL = 'andycsoto@webmaster.cl'
-
-try:
-    from local_settings import *
-except ImportError:
-    pass
