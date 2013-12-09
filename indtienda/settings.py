@@ -19,6 +19,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
+        #'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        #'NAME': 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'indtiendadb',                      # Or path to database file if using sqlite3.
         'USER': 'andycsoto',                      # Not used with sqlite3.
@@ -216,3 +218,8 @@ try:
     from local_settings import *
 except ImportError:
     pass
+
+LOCALE_PATHS = (
+    '/Users/alcifuen/indtienda/dictionary',
+    '/home/andycsoto/webapps/indtienda/dictionary',
+)
