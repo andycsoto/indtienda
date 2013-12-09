@@ -221,5 +221,5 @@ except ImportError:
 
 LOCALE_PATHS = (
     '/Users/alcifuen/indtienda/dictionary',
-    '/home/andycsoto/webapps/indtienda/dictionary',
+    '/home/andycsoto/webapps/indtienda/indtienda/dictionary',
 )
