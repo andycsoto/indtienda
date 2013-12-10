@@ -4479,7 +4479,7 @@ msgstr "Bloques tabulados"
 #: templates/oscar/partials/search.html:6
 #: templates/oscar/search/results.html:20
 msgid "Search"
-msgstr "Buscar"
+msgstr "asdaadsadssasad"
 
 #: apps/shipping/methods.py:10
 msgid "Free shipping"
