@@ -7916,7 +7916,7 @@ msgstr "\nTotal: %(total)s"
 
 #: templates/oscar/partials/nav_primary.html:26
 msgid "Browse Store"
-msgstr "Explorddadsaddasar la tienda"
+msgstr "Explorar la tienda"
 
 #: templates/oscar/partials/pagination.html:11
 #: templates/oscar/search/partials/pagination.html:11
