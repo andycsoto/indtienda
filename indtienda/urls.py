@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
 from oscar.app import application
+import settings
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -16,4 +17,8 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+    (r'^site_media/(?P<path>.*)$', 'django.views.static.serve',
+            {'document_root': settings.STATIC_ROOT, 'show_indexes': True }),
+        (r'^static/(?P<path>.*)$', 'django.views.static.serve',
+            {'document_root': settings.STATIC_ROOT, }),
 )
