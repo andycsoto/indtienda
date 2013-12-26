@@ -225,3 +225,11 @@ LOCALE_PATHS = (
     '/Users/alcifuen/indtienda/dictionary',
     '/home/andycsoto/webapps/indtienda/indtienda/dictionary',
 )
+
+OSCAR_INITIAL_ORDER_STATUS = 'Pendiente'
+OSCAR_INITIAL_LINE_STATUS = 'Pendiente'
+OSCAR_ORDER_STATUS_PIPELINE = {
+    'Pendiente': ('Listo para entrega', 'Cancelado',),
+    'Listo para entrega': ('Entregado', 'Cancelado',),
+    'Cancelado': (),
+    }
