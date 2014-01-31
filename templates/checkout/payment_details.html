@@ -1,0 +1,27 @@
+{% extends "checkout/checkout.html" %}
+{% load currency_filters %}
+{% load i18n %}
+
+{% block title %}
+{% trans "Payment details" %} | {{ block.super }}
+{% endblock %}
+
+{% block checkout-nav %}
+	{% include 'checkout/nav.html' with step=3 %}
+{% endblock %}
+
+{% block order_contents %}{% endblock %}
+{% block shipping_address %}{% endblock %}
+{% block shipping_method %}{% endblock %}
+{% block payment_method %}{% endblock %}
+
+{% block payment_details %}
+	<div class="sub-header">
+		<h2>Enter payment details</h2>
+	</div>
+
+    {% block payment_details_content %}
+		<p>{% trans "Debes realizar una transferencia electronica o pagar personalmente en la tienda." %}</p>
+		<a href="{% url checkout:preview %}" class="btn btn-primary btn-large">{% trans "Continue" %}</a>
+	{% endblock payment_details_content %}
+{% endblock payment_details %}
